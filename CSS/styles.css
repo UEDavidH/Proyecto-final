@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 10px;
+}
+body{
+    background-color: black;
+}
+.title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.form-control{
+    color: gray;
+    background-color: black;
+    border-color: rgb(160, 47, 212);
+    display: block; 
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 90px;
+} 
+#inputTitle{
+    font-weight: bold;
+}
+#inputName{
+    
+}
+#inputLastNames{
+
+}
+#inputBorn{
+    padding: 0;
+    padding-top: 10px;
+    padding-right:5px;
+}
+#inputPay{
+    display: inline;
+}
+#inputEmail{
+
+}
+#inputPassword{
+
+}
+#inputConfirm{
+
+}
+#inputTerms{
+    display: inline;
+}
+#inputSend{
+    display: inline;
+}
+#inputSubmit{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(160, 47, 212);
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+#dumbasstext{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#inputSubmit::placeholder{
+    line-height: 100px;
+}
