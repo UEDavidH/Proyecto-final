@@ -4,90 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Transacción</title>
+    <link rel="stylesheet" href="./CSS/stylesform.css">
 </head>
+
 <body>
-    <h1 class="title">Regístrate</h1><br>
-    <h2>Crea tu cuenta gamer de loop</h2>
+    <img id="control" src="./img/luis-villasmil-ITFwHdPEED0-unsplash.jpg" alt="control">
+    <h1 class="title">Realiza tu compra</h1><br>
+    <h2 class="subtitle">Compra el juego de tu sueños</h2>
     <br>
-    <div class="txt">
+    <form style="padding: 0.05in;" id="form"></form>
+    <div class="container">
         <label id="inputTitle" for="inputNames">
-            Nombre(s)
+            Nombre y Apellidos del titular
         </label>
-        <input type="text" class="form-control" id="inputNames" placeholder="Introduzca su nombre o nombres">
-    </div>
+        <input type="text" class="form-control" id="inputNames" placeholder="Introduzca su nombre">
+    </div>  
     <br>
-    <div class="txt">
-        <label id="inputTitle" for="inputLastNames">
-            Apellidos
-        </label>
-        <input type="text" class="form-control" id="inputLastNames" placeholder="Introduzca sus apellidos">
-    </div>
-    <br>
-    <div class="txt">
-        <label id="inputTitle" for="inputBorn">
-            Fecha de Nacimiento
-        </label>
-        <input type="date" class="form-control" id="inputBorn" placeholder="Introduzca su fecha de nacimiento">
-    </div>
-    <br>
-    <div class="txt">
+    <div class="container">
         <label id="inputTitle" for="inputPay">
-            Medio(s) de pago
+            Medio de pago
         </label>
-        <h3 id="dumbasstext">Seleccione un medio de pago</h3>
-        <input type="radio" class="form-control" id="inputPay" value="">
-        <input type="radio" class="form-control" id="inputPay" value="">
-        <input type="radio" class="form-control" id="inputPay" value="">
-        <input type="radio" class="form-control" id="inputPay" value="">
-        <input type="radio" class="form-control" id="inputPay" value="">
+        <h3 id="dtext">Seleccione un medio de pago</h3>
+        <label>
+            <input type="radio" name="pago" class="form-control" id="inputPay" value="visa">
+            <img id="image" src="./img/fbra_card_visa_new.png">
+        </label>
+        <label>
+            <input type="radio" name="pago" class="form-control" id="inputPay" value="codensa">
+            <img id="image" src="./img/Logo_Codensa.png">
+        </label>
+        <label>
+            <input type="radio" name="pago" class="form-control" id="inputPay" value="daviplata">
+            <img id="image" src="./img/Logo_Daviplata.png">
+        </label>
+        <label>
+            <input type="radio" name="pago" class="form-control" id="inputPay" value="nequi">
+            <img id="image" src="./img/Logo_Nequi.png">
+        </label>
+        <label>
+            <input type="radio" name="pago" class="form-control" id="inputPay" value="cmr">
+            <img id="image" src="./img/medios-01.svg">
+        </label>
     </div>
     <br>
-    <div class="txt">
+    <div class="container">
+        <label id="inputTitle" for="inputBorn">
+            Fecha de Vencimiento
+        </label>
+        <input type="month" min="septiembre-2022" value="09-2022" class="form-control" id="inputBorn" placeholder="Introduzca su fecha de nacimiento">
+    </div>
+    <br>
+    <div class="container">
         <label id="inputTitle" for="inputEmail">
             Correo electrónico
         </label>
-        <input type="text" class="form-control" id="inputEmail" placeholder="Introduzca su correo electrónico">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Introduzca su correo">
     </div>
     <br>
-    <div class="txt">
+    <div class="container">
+        <label id="inputTitle" for="inputCountry">
+            País de residencia
+        </label>
+        <select id="inputCountry" class="form-control">
+            <option selected>Selecciona</option>
+            <option>Ecuador</option>
+            <option>Colombia</option>
+            <option>Venezuela</option>
+        </select>
+    </div><br>
+    <div class="container">
         <label id="inputTitle" for="inputPassword">
-            Contraseña
+            Numero de la tarjeta
         </label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Introduzca su contraseña">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Introduzca los numeros">
     </div>
     <br>
-    <div class="txt">
-        <label id="inputTitle" for="inputConfirm">
-            Confirme su contraseña
-        </label>
-        <input type="text" class="form-control" id="inputConfirm" placeholder="Introduzca nuevamente su contraseña">
-    </div>
-    <br>
-    <div class="txt">
+    <div class="container">
         <input type="checkbox" class="form-control" id="inputTerms">
         <label for="inputTerms">
-            Acepto los terminos y condiciones
-        </label>
-    </div>
-    <div class="txt">
-        <input type="checkbox" class="form-control" id="inputSend">
-        <label for="inputSend">
-            Deseo recibir correos acerca de promociones, novedades, nuevos productos. etc
+            Acepto los<a id="link" target="_blank" href="./views/terms.html">terminos y condiciones</a>.
         </label>
     </div>
     <br>
-    <div class="txt">
-        <input type="submit" id="inputSubmit" value="Aceptar">
+    <div class="container">
+        <button type="button" onclick="location.href='./views/compra.html'" id="inputSubmit" href="./views/compra.html">Comprar</button>
     </div>
-
     <footer>
-        <article>
-            ¿Ya tienes una cuenta?. Iniciar sesión
-        </article>
     </footer>
-
-    <script src="./scripts/app.js"></script>
+    <br>
+    <script src="./scripts/validation.js"></script>
 </body>
 </html>
