@@ -48,14 +48,17 @@ pay.addEventListener('change', (e) => {
     objectValid.pagos = e.target.checked;
     console.log(Object.values(objectValid));
 });
+//pendiente
 
 born.addEventListener('change', (e) => {
     console.log(e.target);
+    const fecha = /^([a-zA-Z])/;
     const dateRegex = /^(0[1-9]|1[0-2])(\/|-)([0-9]{4})$/gm; 
     let valorborn = e.target.value;
-    objectValid.expiracion = e.target.value.match(dateRegex) ? true : false;
+    objectValid.expiracion = e.target.value.match(dateRegex, fecha) ? true : false;
     console.log(Object.values(objectValid));
 });
+//pendiente
 
 email.addEventListener('change', (e) => {
     console.log(e.target);
@@ -66,13 +69,17 @@ email.addEventListener('change', (e) => {
 });
 
 country.addEventListener('change', (e) => {
+    objectValid.ciudad = e.target.checked === true ? false : true;
     console.log(e.target);
+    console.log(Object.values(objectValid));
 });
+//pendiente
 
 password.addEventListener('change', (e) => {
     console.log(e.target);
     
 });
+//pendiente
 
 terms.addEventListener('change', (e) => {
    objectValid.terminos = e.target.checked ; false;
