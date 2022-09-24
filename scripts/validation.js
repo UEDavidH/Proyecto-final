@@ -71,7 +71,7 @@ country.addEventListener('change', (e) => {
 
 password.addEventListener('change', (e) => {
     console.log(e.target);
-
+    
 });
 
 terms.addEventListener('change', (e) => {
